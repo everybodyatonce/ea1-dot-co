@@ -1,0 +1,173 @@
+---
+layout: default
+---
+
+<div class="hero-unit">
+    {% include header.html %}
+    <div class="dot-pattern"></div>
+    <h1>{{ site.title }}</h1>
+    <div class="border"></div>
+    <h3>
+        Your Audience Has An Audience
+    </h3>
+</div>
+
+<section class="about" id="about">
+    <div class="section-content">
+        <h1>About</h1>
+        <div class="border"></div>
+        <p>
+            Everybody at Once is a consultancy based in NYC that specializes in
+            audience development and social strategy for media and
+            entertainment. Founded in 2013, we have nurtured some of the biggest,
+            most dedicated fan communities on the internet and transformed how our
+            clients understand and integrate social into their business.
+        </p>
+        <div class="border"></div>
+        <h3>We Believe In</h3>
+        <div class="about-section-group">
+            <div class="about-section">
+                <div class="item-heading large-heading">Capturing and redirecting existing energy</div>
+                <div class="item-subheading large-subheading">
+                    Your fans are already creating fanworks and spreading the word to their
+                    friends. Rather than building something new and isolated, we can help you amplify and redirect their
+                    energy for a more vibrant, organic community.
+                </div>
+            </div>
+            <div class="about-section">
+                <div class="item-heading large-heading">Enabling your fans to be better fans</div>
+                <div class="item-subheading large-subheading">
+                    How should an official brand participate in a fan community? Leveraged correctly, resources and visibility
+                    that only you have can help fans better organize and mobilize at key moments.
+                </div>
+            </div>
+            <div class="about-section">
+                <div class="item-heading large-heading">Building audience development into the organization</div>
+                <div class="item-subheading large-subheading">
+                    Slapping a # sign in front of your brand name the
+                    day before premiere is not enough. We work with organizations to make sure that the audience is considered
+                    by all parts of the organization every step of the way, from pre-production all the way to the off-season.
+                </div>
+            </div>
+        </div>
+        <div class="about-video">
+            <a href="#" class="show-video more-link faux-underline-large">More on EA1's Philosophy</a>
+        </div>
+    </div>
+</section>
+
+<div id="instafeed" class="instagram-feed"></div>
+
+<section class="more-info" id="work">
+    <div class="section-content">
+        <h1>Work</h1>
+        <div class="border"></div>
+        <div class="case-studies">
+            {% for case_study in site.case_studies do %}
+            <div class="case-study">
+                <div class="case-study-image" style="background-image: url('{{ case_study.image }}')" ></div>
+                <div class="case-study-name item-heading large-heading">{{ case_study.name }}</div>
+                <div class="case-study-year item-supheading">{{ case_study.year }}</div>
+                <div class="case-study-description item-subheading">{{ case_study.content }}</div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="border"></div>
+        <h3>Our Clients</h3>
+        <div class="client-section">
+            <div class="client"><a class="more-link faux-underline-large" href="http://americanpublicmedia.publicradio.org/">American Public Media</a></div>
+            <div class="client"><a class="more-link faux-underline-large" href="http://asroma.it">AS Roma</a></div>
+            <div class="client"><a class="more-link faux-underline-large" href="http://bbcamerica.com">BBC America</a></div>
+            <div class="client"><a class="more-link faux-underline-large" href="http://bbcworldwide.com">BBC Worldwide</a></div>
+            <div class="client"><a class="more-link faux-underline-large" href="http://www.bbc.com/news/world/">BBC World News</a></div>
+            <div class="client"><a class="more-link faux-underline-large" href="http://frederator.com/">Frederator Studios</a></div>
+            <div class="client"><a class="more-link faux-underline-large" href="http://www.creativelab5.com/">Google Creative Lab</a></div>
+            <div class="client"><a class="more-link faux-underline-large" href="https://www.youtube.com/user/pbsdigitalstudios">PBS Digital Studios</a></div>
+            <div class="client"><a class="more-link faux-underline-large" href="http://www.webbyawards.com/">The Webby Awards</a></div>
+        </div>
+    </div>
+</section>
+
+<section class="team" id="team">
+    <div class="section-content">
+        <h1>Team</h1>
+        <div class="border"></div>
+        <div class="team-leads">
+            {% for team_member in site.team_members do %}
+            {% if team_member.title %}
+            <div class="team-member lead-team-member">
+                <div class="team-member-image" style="background-image: url('{{ team_member.image }}')" ></div>
+                <div class="team-member-name item-heading">{{ team_member.name }}</div>
+                <div class="team-member-title item-supheading">{{ team_member.title }}</div>
+                <div class="team-member-description item-subheading">{{ team_member.description }}</div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+        <div class="border"></div>
+        <div class="team-collaborators">
+            <h3>Collaborators</h3>
+            {% for team_member in site.team_members do %}
+            {% if team_member.title == null %}
+            <div class="team-member">
+                <div class="team-member-image" style="background-image: url('{{ team_member.image }}')" ></div>
+                <div class="team-member-name item-heading">{{ team_member.name }}</div>
+                <div class="team-member-description item-subheading">{{ team_member.description }}</div>
+            </div>
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="talks" id="talks">
+    <div class="section-content">
+        <h1>Talks</h1>
+        <div class="border"></div>
+        <div class="site-talks">
+            {% for talk in site.talks do %}
+            <div class="site-talk">
+                <iframe id="ytplayer" type="text/html"
+                        src="http://www.youtube.com/embed/{{ talk.youtube_code }}?autohide=1"
+                        frameborder="0"></iframe>
+                <div class="talk-title item-heading large-heading">{{ talk.name }}</div>
+                <div class="talk-description item-subheading large-subheading">{{ talk.description }}</div>
+            </div>
+            {% endfor %}
+        </div>
+        <a class="more-link faux-underline-large" href="http://everybodyatonce.tumblr.com/tagged/ea1talks">More Talks</a>
+    </div>
+</section>
+
+<section class="blog" id="blog">
+    <div class="section-content">
+        <h1>Blog</h1>
+        <div class="border"></div>
+        <div class="site-blog">
+        </div>
+        <a class="more-link faux-underline-large" href="http://everybodyatonce.tumblr.com">Read More</a>
+    </div>
+</section>
+
+<section class="jobs" id="jobs">
+    <div class="dot-pattern-white"></div>
+    <div class="section-content">
+        <h1>Jobs</h1>
+        <div class="border"></div>
+        <p>
+            Everybody at Once is always on the lookout for talented decoders of the Matrix to join our team.
+        </p>
+        <ul>
+            {% for job in site.jobs do %}
+            <li>
+                <a class="job-listing" href="{{ job.url }}">
+                    <div class="item-heading">{{ job.title }}</div>
+                    <div class="item-subheading">{{ job.description }}</div>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        <a class="more-link faux-underline-large" href="/jobs">Learn More</a>
+    </div>
+</section>

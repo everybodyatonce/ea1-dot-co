@@ -1,0 +1,22 @@
+<head>
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  {% if page.title %}
+  <title>{{ page.title }} | EA1</title>
+  {% else %}
+  <title>{{ site.title }}</title>
+  {% endif %}
+  {% if page.excerpt %}
+  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines }}">
+  {% elsif page.description %}
+  <meta name="description" content="{{ page.description }}">
+  {% else %}
+  <meta name="description" content="{{ site.description }}">
+  {% endif %}
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="/assets/application.css" />
+  <link href='http://fonts.googleapis.com/css?family=Lora:400,400italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
+</head>

@@ -1,0 +1,77 @@
+@import "compass/css3"
+
+@media (max-width: 700px)
+  body
+    font-size: 16px
+  header
+    font-size: 12px
+    .business-name
+      display: none
+    a
+      font-family: "montserrat", sans-serif
+      font-weight: 700
+      &:last-child
+        display: none
+
+  // Does not work well on mobile so disable
+  .about-video
+    display: none
+
+  .hero-unit
+    padding-bottom: 71px
+    h1
+      font-size: 53px
+      padding-top: 30px
+
+  .about
+    .about-section-group
+      .about-section
+        .item-heading, .item-subheading
+          width: 100%
+          margin-left: 0px
+
+  .case-studies
+    .case-study
+      width: 100%
+      margin: 0px 0px 30px
+
+  .more-info
+    .section-content
+      .client-section
+        +column-count(2)
+        +column-width(130px)
+        .faux-underline-large
+          &:before
+            border-bottom: 0px solid #333
+
+  .info-section
+    img
+      display: none
+    .item-subheading
+      margin-top: 8px
+
+  .single-page .section-content .job-listing
+    font-size: 16px
+    h3 a
+      &.faux-underline-large
+        &:before
+          border-bottom: 0px solid #333
+
+  .team
+    .team-member
+      width: 49%
+      .team-member-image
+        float: none
+        margin: 0px auto 12px
+      .item-subheading, .item-heading, .item-supheading
+        width: 100%
+        max-width: 100%
+        text-align: center
+
+  .talks .site-talk
+    width: 100%
+    &:first-child, &:last-child
+      margin: 0px 0px 20px
+
+  .war-room, .streets
+    display: none

@@ -1,0 +1,75 @@
+---
+layout: default
+title: "Work at EA1"
+description: "Everybody at Once is always on the lookout for talented decoders of the Matrix to join our team."
+---
+
+<section class="jobs single-page">
+    <div class="section-content">
+        <h1>Working at EA1</h1>
+        <div class="border"></div>
+        <div class="company-images">
+            <img class="post-it" src="/assets/images/company/post-it.jpg" />
+            <img class="streets" src="/assets/images/company/streets.jpg" />
+            <img class="war-room" src="/assets/images/company/war-room.jpg" />
+        </div>
+        <div class="smaller-content">
+            <div class="border" style="display: inline-block"></div>
+            <h3>Join Us</h3>
+            <p>
+                Everybody at Once (EA1) is a small, bootstrapped
+                company founded in 2013 with the goal of reimagining
+                how media and entertainment brands can use
+                the internet to tell compelling stories and build authentic
+                communities.
+            </p>
+            <p>
+                We are currently a tight-knit team of 6 full-time
+                staff (plus a handful of collaborators) based in
+                New Yok who are passionate about internet memes,
+                animated gifs, and poptarts.</p>
+
+              <p> We aren't marketers who learned how to do "internet stuff"; we come from a diverse range of internet-steeped
+              backgrounds such as online research, videoblogging,
+              community organizing, internet archiving, video production, etc. We are adept
+              at navigating many different contexts, online and off, and bring a sense of
+              humor and improvisational touch to everything we do. We like falling into research
+              rabbit holes, digging deep beyond superficial metrics, and experiencing the full spectrum of feels.
+            </p>
+            <p>
+             On a typical work day, we
+                draw diagrams of online communities, come up with
+                groundbreaking ways to use our favorite online
+                platforms, and make being a fan more fun for millions
+                of people around the world.
+            </p>
+            <p>
+                If this sounds like a fun way to spend your days,
+                maybe you should work with us! We are always
+                interested in meeting dedicated, lovely people who <3
+                the internet as much as we do.
+            </p>
+            <div class="border"></div>
+            <h3>Job Openings</h3>
+            <ul>
+                {% for job in site.jobs %}
+                <li><a href="{{ job.url }}">{{ job.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="jobs single-page">
+    <div class="section-content">
+        <h1>Jobs</h1>
+        <div class="smaller-content">
+            <div class="border"></div>
+            {% for job in site.jobs %}
+            <div class="job-listing">
+                <h3><a href="{{ job.url }}" class="faux-underline-large">{{ job.name }}</a></h3>
+                {{ job.content }}
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

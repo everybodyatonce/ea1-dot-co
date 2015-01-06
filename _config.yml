@@ -1,0 +1,26 @@
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "vendor", "Gemfile", "Gemfile.lock", "Guardfile", "assets.yml"]
+highlighter: pygments
+
+title: Everybody at Once
+description: Everybody at Once is a consultancy based in NYC that specializes in audience development and social strategy for media and entertainment.
+url: http://www.ea1.co
+permalink: /:categories/:title
+production_url: http://www.ea1.co
+contact_email: info@ea1.co
+
+google_analytics: UA-57877165-1
+google_site_verification: vgFfM00AhMLU37H3RYO9xqZEj2Oh2LNfDQN_CQcA9p4
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "smart"]
+
+collections:
+  team_members:
+    output: false
+  talks:
+    output: false
+  case_studies:
+    output: false
+  jobs:
+    output: true

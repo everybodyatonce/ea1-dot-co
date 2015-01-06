@@ -1,0 +1,482 @@
+// Import compass modules
+@import "compass/support"
+@import "compass/utilities"
+@import "compass/css3"
+
+@include keyframes(background-animation-warm)
+  0%
+    background: hsl(360, 100%, 98%)
+  100%
+    background: hsl(240, 100%, 98%)
+
+@include keyframes(background-animation-cool)
+  0%
+    background: hsl(100, 100%, 98%)
+  100%
+    background: hsl(240, 100%, 98%)
+
+body
+  padding: 0px
+  margin: 0px
+  font-family: 'Lora', Arial, Helvetica, sans-serif
+  letter-spacing: 0.01rem
+  font-weight: 400
+  font-style: normal
+  font-size: 18px
+  line-height: 1.6em
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  font-smoothing: antialiased
+  color: rgba(0,0,0,0.8)
+  @include animation(background-animation-cool 5s linear infinite alternate)
+  a
+    color: #39c
+
+  h1, h2, h1 a, h2 a, h1, h3, h4, h5, h6
+    color: #222
+
+h1, h2, h3, h4, h5, h6
+  margin: 0 0 20px
+
+p, ul, ol, table, pre, dl
+  margin: 0 0 20px
+
+pre
+  margin-bottom: 30px
+
+p
+  line-height:  1.7em
+  word-wrap: break-word
+
+p.nomargin
+  margin: 0 0 20px
+
+ol
+  margin: 0 0 50px
+
+li
+  line-height: 150%
+  padding: 5px 0px
+  word-wrap: break-word
+ul li
+  list-style-type: circle
+
+ol:last-child, p:last-child
+  margin-bottom: 0px
+
+h1, h3
+  line-height: 148%
+  font-weight: normal
+  font-family: "montserrat", sans-serif
+  font-weight: 700
+
+h1
+  font-size: 59px
+  text-align: center
+  letter-spacing: -2px
+  text-transform: uppercase
+  line-height: 100%
+
+h2
+  font-size: 16px
+  letter-spacing: 1px
+  font-weight: normal
+
+h3
+  margin-bottom: 10px
+  text-align: center
+  color: rgba(0,0,0,0.8)
+
+a
+  font-weight: 400
+  text-decoration: none
+
+a, a:active, a:focus
+  outline: none
+
+img
+  max-width: 100%
+
+section:eq(2)
+  background: cyan
+
+section
+  padding: 80px 0px
+  &:nth-child(2n + 1)
+    @include animation(background-animation-warm 5s linear infinite alternate)
+  .section-content
+    max-width: 800px
+    padding: 0px 20px
+    margin: 0px auto
+  .border
+    width: 30px
+    margin: 0px auto
+    display: block
+    background: #333
+    height: 3px
+    margin-bottom: 30px
+
+header
+  top: 0px
+  text-align: left
+  z-index: 11
+  width: 100%
+  padding-top: 15px
+  text-align: center
+  height: 43px
+  text-transform: uppercase
+  font-size: 14px
+  position: fixed
+  z-index: 2
+  border-bottom: 1px solid #e2e2e2
+  color: #ccc
+  background: rgb(253,253,253)
+  a
+    color: rgba(0,0,0,0.8)
+    display: inline-block
+    padding: 0 5px
+  .business-name
+    font-family: "montserrat", sans-serif
+    font-weight: 700
+
+.pre-footer
+  padding: 30px 44px
+  text-align: center
+  .footer-heading
+    font-family: "montserrat", sans-serif
+    letter-spacing: 1px
+    margin-bottom: 4px
+  img
+    height: 80px
+
+footer
+  text-align: center
+  padding: 10px 20px
+  font-size: 12px
+  color: #6f6f6f
+
+.wrapper
+  margin: 0px auto
+
+.foreground
+  max-width: 800px
+  padding: 0px 20px
+  margin: 0px auto
+
+.dot-pattern
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAKklEQVQYV2NkYGD4D8QgwAilsVIgSaIVYjMBQzMu64hWiGELSW4c7J4BAEqSCAuo/VqtAAAAAElFTkSuQmCC)
+  position: absolute
+  top: 0px
+  left: 0px
+  width: 100%
+  height: 100%
+  background-size: 0.3%
+  z-index: 1
+
+.hero-unit
+  position: relative
+  background-image: url('/assets/images/hero.gif')
+  padding: 0px 0px 109px 0px
+  color: white
+  text-align: center
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: top center
+  z-index: 3
+  h1
+    font-size: 69px
+    padding-top: 71px
+    margin-bottom: 1px
+  h1, h3, .border
+    color: white
+    z-index: 2
+    position: relative
+  h3
+    margin: 0px auto
+    margin-bottom: 20px
+    font-size: 18px
+  .border
+    width: 38px
+    margin: 0 auto
+    height: 4px
+    margin-bottom: 10px
+    margin-top: 10px
+    background: white
+  header
+    position: relative
+    z-index: 3
+    background: rgba(253,253,253, 0)
+    color: white
+    border-bottom: 0px solid
+    a
+      color: white
+
+.more-info
+  .section-content
+    .client-section
+      text-align: center
+      +column-count(3)
+      +column-width(180px)
+      margin: 0px auto
+    .info-section-group
+      margin-bottom: 20px
+      .info-section
+        width: 49%
+        display: inline-block
+        vertical-align: top
+        margin-bottom: 18px
+        .info-body
+          width: 93%
+
+.item-heading
+  font-family: "montserrat", sans-serif
+  font-weight: 700
+  text-transform: uppercase
+  font-size: 13px
+  line-height: 148%
+  text-align: left
+  &.large-heading
+    font-size: 22px
+    line-height: 138%
+    margin-bottom: 7px
+
+.item-subheading
+  font-size: 14px
+  line-height: 144%
+  text-align: left
+  &.large-subheading
+    font-size: 16px
+
+.item-supheading
+  font-size: 14px
+  font-style: italic
+  color: #8B8989
+  margin-top: -6px
+  text-align: left
+
+.case-studies
+  text-align: center
+  .case-study
+    width: 30%
+    display: inline-block
+    vertical-align: top
+    margin: 0px 2% 17px
+    &:first-child
+      margin-left: 0px
+    &:last-child
+      margin-left: 0px
+    .item-heading
+      margin-bottom: 1px
+    .item-supheading
+      margin-bottom: 6px
+    .case-study-image
+      width: 100%
+      height: 150px
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: top center
+      margin-bottom: 10px
+
+.talks
+  text-align: center
+  .section-content
+    max-width: 950px
+  iframe
+    max-width: 100%
+    height: 230px
+    width: 100%
+  .site-talks
+    width: 100%
+  .site-talk
+    display: inline-block
+    width: 44%
+    vertical-align: top
+    .item-heading, .item-subheading
+      text-align: center
+    &:first-child
+      margin-right: 2%
+    &:last-child
+      margin-left: 2%
+
+.team
+  .section-content
+    max-width: 950px
+  .team-member
+    width: 32.9%
+    display: inline-block
+    vertical-align: top
+    margin-bottom: 20px
+    .team-member-image
+      width: 110px
+      height: 110px
+      background: #333
+      +border-radius(50%)
+      display: block
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: center center
+      float: left
+      margin-right: 6%
+    .item-subheading
+      max-width: 93%
+  .team-leads
+    margin-bottom: 20px
+  .team-collaborators
+    text-align: center
+    h3
+      margin-bottom: 28px
+    .team-member-image
+      width: 60px
+      height: 60px
+
+.about
+  .section-content
+    p
+      max-width: 650px
+      margin: 0px auto 20px
+  .about-video
+    text-align: center
+    iframe
+      height: 344px
+      width: 611px
+      margin: 50px auto
+  .about-section-group
+    margin-top: 20px
+    .about-section
+      border-bottom: 1px solid rgb(236, 236, 236)
+      padding: 15px 0px
+      &:first-child
+        padding-top: 0px
+      &:last-child
+        padding-bottom: 0px
+        border-bottom: 0px solid
+      .item-heading
+        margin-bottom: 7px
+        width: 30%
+        padding-right: 0%
+        display: inline-block
+        vertical-align: top
+      .item-subheading
+        width: 65%
+        margin-left: 4%
+        display: inline-block
+        vertical-align: top
+
+.blog
+  .section-content
+    text-align: center
+    max-width: 450px
+    position: relative
+    .blog-entry
+      margin-bottom: 10px
+      &:last-child
+        margin-bottom: 0px
+    .item-heading.large-heading
+      margin-bottom: 2px
+      a
+        font-weight: 700
+        color: rgba(0,0,0,0.8)
+
+.jobs
+  .section-content
+    text-align: center
+    max-width: 450px
+    position: relative
+  p, ul, ol
+    text-align: left
+  .job-listing
+    border-bottom: 1px dotted #adadad
+    color: #333
+    display: block
+    padding: 20px 0px
+    text-align: left
+    &:hover
+      .item-heading
+        color: #39c
+    &:last-child
+      border-bottom: 0px
+      padding-bottom: 0px
+    &:first-child
+      padding-top: 0px
+      border-top: 0px solid
+
+.single-page
+  padding: 140px 0px
+  h1
+    font-size: 59px
+  .section-content
+    max-width: 960px
+    .company-images
+      margin-bottom: 20px
+      .post-it
+        width: 500px
+        vertical-align: top
+        margin-bottom: 10px
+      .streets
+        margin-top: 95px
+        width: 315px
+        float: right
+      .war-room
+        width: 388px
+        float: right
+        margin-top: -38px
+        margin-right: 20px
+        margin-left: 52px
+        margin-bottom: 25px
+    .smaller-content
+      max-width: 640px
+      margin: 0px auto
+    .job-listing
+      max-width: 100%
+      padding: 22px 0px 30px
+      font-size: 19px
+      h3
+        margin-bottom: 30px
+        a
+          color: black
+      &:first-child
+        padding-top: 40px
+      &:last-child
+        border-bottom: 0px solid
+
+.more-link
+  color: black
+  margin-top: 20px
+
+.faux-underline-large
+  &
+    display: inline-block
+    position: relative
+    text-decoration: none
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    display: inline-block
+    height: 1em
+    width: 100%
+    margin-top: 0.4em
+    border-bottom: 2px solid #333
+    color: rgb(80, 80, 80)
+
+  &:hover
+    text-decoration: none
+
+.instagram-feed
+  width: 100%
+  overflow: hidden
+  white-space: nowrap
+  height: 150px
+  a
+    display: inline-block
+  img
+    width: initial
+    +opacity(0.2)
+    &:hover
+      +opacity(1)
+
+.twitter-link
+  img
+    height: 54px
+    margin-bottom: 85px
