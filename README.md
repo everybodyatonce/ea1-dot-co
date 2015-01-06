@@ -23,7 +23,7 @@ the existing files. Copy an exiting file so that the formatting is the
 same.
 
 It should look like:
-``
+```
 ---
 layout: default
 name: "Kenyatta Cheese"
@@ -32,7 +32,7 @@ description: "Pioneered Online Video, Created Know Your Meme"
 title: "Co-Founder"
 link: "http://finalbossform.com/"
 ---
-``
+```
 
 If you would like to create a new team member, talk or job BUT not
 publish it to the site, add `published: false` to the above code
