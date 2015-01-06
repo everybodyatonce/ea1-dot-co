@@ -1,4 +1,4 @@
-[![Build Status](https://magnum.travis-ci.com/zamiang/ea1.svg?token=7yXqk14mwos4nMgrf2G4&branch=master)](https://magnum.travis-ci.com/zamiang/ea1)
+[![Build Status](https://api.travis-ci.org/everybodyatonce/ea1-dot-co.svg)](https://travis-ci.org/everybodyatonce/ea1-dot-co)
 
 ## Code for ea1.co
 
