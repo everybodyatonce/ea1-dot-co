@@ -8,7 +8,7 @@ Site is built on Jekyll and deployed on Amazon S3. See the
 more detail.
 
 The website is automatically deployed each time a change is commited
-to this repository.
+to this repository. *NOTE*: Changes may take 5-10 minutes to appear on the live site. You can monitor deploy progress by clicking [here](https://travis-ci.org/everybodyatonce/ea1-dot-co) or clicking the build status image above.
 
 ## Editing content on ea1.co
 
