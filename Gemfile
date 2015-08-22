@@ -6,7 +6,7 @@ Encoding.default_external = Encoding::UTF_8
 Encoding.default_internal = Encoding::UTF_8
 
 # jekyll
-gem 'jekyll'
+gem 'jekyll', '~> 2.5'
 gem 'liquid'
 gem 'redcarpet'
 
