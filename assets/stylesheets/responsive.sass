@@ -1,5 +1,3 @@
-@import "compass/css3"
-
 @media (max-width: 700px)
   body
     font-size: 16px
@@ -38,8 +36,10 @@
   .more-info
     .section-content
       .client-section
-        +column-count(2)
-        +column-width(130px)
+        -webkit-column-count: 2
+        column-count: 2
+        -webkit-column-width: 130px
+        column-width: 130px
         .faux-underline-large
           &:before
             border-bottom: 0px solid #333

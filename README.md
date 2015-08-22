@@ -55,17 +55,10 @@ and run:
 ```bash
 $ bundle install
 $ jekyll serve --watch
-$ guard
 ```
 
-That will give you a version of the site running locally. You should
-run `guard` in another terminal window. It will compile your edited coffeescript and sass files.
-
-### Editing styles
-
-NOTE: Only edit .sass files. DO NOT edit any .css files. The sass
-files will get compiled into the css. For more information please look
-at the [sass](http://sass-lang.com/) documentation and the [compass](http://compass-style.org/) documentation.
+That will give you a version of the site running locally.
+__NOTE: you no longer need to run `guard` in another tab when editing styles.__
 
 ### Editing javascripts
 

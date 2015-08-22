@@ -11,6 +11,10 @@ contact_email: info@ea1.co
 google_analytics: UA-57877165-1
 google_site_verification: vgFfM00AhMLU37H3RYO9xqZEj2Oh2LNfDQN_CQcA9p4
 
+sass:
+  style: :compressed
+  sass_dir: assets/stylesheets
+
 markdown: redcarpet
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data", "smart"]
