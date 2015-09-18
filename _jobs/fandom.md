@@ -2,6 +2,7 @@
 layout: job
 title: "Fandom Management Internship"
 description: "We are looking for a contractor to perform short term coolness management for one of our TV network clients for 12 weeks"
+published: false
 ---
 
 We are seeking four hard working, excited, curious, and efficient interns to join our team in New York beginning in January 2015 for 3-6 months, dependent upon availability.  Must be available minimum 2 days per week from 10:00a-6:00p, with the possibility of some additional hours both in the office and/or remotely.

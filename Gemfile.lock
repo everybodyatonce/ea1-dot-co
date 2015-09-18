@@ -110,3 +110,6 @@ DEPENDENCIES
   s3_website
   sass
   therubyracer
+
+BUNDLED WITH
+   1.10.3

@@ -17,7 +17,7 @@ body
   letter-spacing: 0.01rem
   font-weight: 400
   font-style: normal
-  font-size: 18px
+  font-size: 17px
   line-height: 1.6em
   text-rendering: optimizeLegibility
   -webkit-font-smoothing: antialiased
@@ -27,6 +27,11 @@ body
   animation: background-animation-cool 5s linear infinite alternate
   a
     color: #39c
+    border-bottom: 2px solid transparent
+    transition: border-color 0.8s
+    &:hover
+      border-color: #39c
+      transition: border-color 0.2s
 
   h1, h2, h1 a, h2 a, h1, h3, h4, h5, h6
     color: #222
@@ -54,8 +59,9 @@ li
   line-height: 150%
   padding: 5px 0px
   word-wrap: break-word
+
 ul li
-  list-style-type: circle
+  list-style-type: disc
 
 ol:last-child, p:last-child
   margin-bottom: 0px
@@ -101,7 +107,7 @@ section
   &:nth-child(2n + 1)
     animation: background-animation-warm 5s linear infinite alternate
   .section-content
-    max-width: 800px
+    max-width: 886px
     padding: 0px 20px
     margin: 0px auto
   .border
@@ -124,13 +130,14 @@ header
   font-size: 14px
   position: fixed
   z-index: 2
-  border-bottom: 1px solid #e2e2e2
   color: #ccc
   background: rgb(253,253,253)
   a
     color: rgba(0,0,0,0.8)
     display: inline-block
-    padding: 0 5px
+    margin: 0 5px
+    &:hover
+      border-color: black
   .business-name
     font-family: "montserrat", sans-serif
     font-weight: 700
@@ -215,7 +222,11 @@ footer
       column-count: 3
       -webkit-column-width: 180px
       column-width: 180px
-      margin: 0px auto
+      margin: 20px auto 0px
+      vertical-align: top
+      .client
+        vertical-align: top
+        margin-bottom: 20px
     .info-section-group
       margin-bottom: 20px
       .info-section
@@ -230,20 +241,22 @@ footer
   font-family: "montserrat", sans-serif
   font-weight: 700
   text-transform: uppercase
-  font-size: 13px
-  line-height: 148%
+  line-height: 1.7em
   text-align: left
   &.large-heading
     font-size: 22px
     line-height: 138%
     margin-bottom: 7px
 
+
+
+
 .item-subheading
-  font-size: 14px
-  line-height: 144%
+  line-height: 1.7em
   text-align: left
+  font-size: 14px
   &.large-subheading
-    font-size: 16px
+    font-size: 17px
 
 .item-supheading
   font-size: 14px
@@ -260,7 +273,7 @@ footer
     width: 30%
     display: inline-block
     vertical-align: top
-    margin: 0px 2% 17px
+    margin: 0px 2% 17px 0px
     &:first-child
       margin-left: 0px
     &:last-child
@@ -331,11 +344,13 @@ footer
 
 .about
   .section-content
+    max-width: 800px
     p
       max-width: 650px
       margin: 0px auto 20px
   .about-video
     text-align: center
+    margin-top: 30px
     iframe
       height: 344px
       width: 611px
@@ -377,19 +392,52 @@ footer
         font-weight: 700
         color: rgba(0,0,0,0.8)
 
+.jobs-list
+  padding-left: 0px
+  a
+    color: black
+  li
+    list-style: none
+    border-bottom: 1px solid rgb(236, 236, 236)
+    padding: 20px 0px
+    .job-listing
+      padding: 0px !important
+    &:last-child
+      border-bottom: 0px solid
+
+.jobs-list-simple
+  a
+    color: black
+
 .jobs
   .section-content
     text-align: center
-    max-width: 450px
+    max-width: 640px
     position: relative
   p, ul, ol
     text-align: left
+  h3
+    margin-bottom: 20px
+    font-size: 34px
+    font-weight: bold
+  &.single-page
+    h3
+      margin-top: 55px
+  h2
+    font-family: "montserrat",sans-serif
+    text-transform: uppercase
+    text-align: left
+    margin-top: 40px
+    margin-bottom: 11px
+    font-size: 18px
   .job-listing
     border-bottom: 1px dotted #adadad
     color: #333
     display: block
-    padding: 20px 0px
+    padding: 50px 0px
     text-align: left
+    max-width: 100%
+    padding: 50px 0px
     &:hover
       .item-heading
         color: #39c
@@ -399,6 +447,15 @@ footer
     &:first-child
       padding-top: 0px
       border-top: 0px solid
+    h3
+      margin-bottom: 30px
+      a
+        color: black
+    &:first-child
+      padding-top: 40px
+    &:last-child
+      border-bottom: 0px solid
+
 
 .single-page
   padding: 140px 0px
@@ -426,39 +483,13 @@ footer
     .smaller-content
       max-width: 640px
       margin: 0px auto
-    .job-listing
-      max-width: 100%
-      padding: 22px 0px 30px
-      font-size: 19px
-      h3
-        margin-bottom: 30px
-        a
-          color: black
-      &:first-child
-        padding-top: 40px
-      &:last-child
-        border-bottom: 0px solid
 
 .more-link
   color: black
   margin-top: 20px
 
 .faux-underline-large
-  &
-    display: inline-block
-    position: relative
-    text-decoration: none
-  &:before
-    content: ''
-    position: absolute
-    left: 0
-    display: inline-block
-    height: 1em
-    width: 100%
-    margin-top: 0.4em
-    border-bottom: 2px solid #333
-    color: rgb(80, 80, 80)
-
+  border-bottom: 2px solid #333
   &:hover
     text-decoration: none
 
@@ -479,3 +510,5 @@ footer
   img
     height: 54px
     margin-bottom: 85px
+  &:hover
+    border-height: 0px
