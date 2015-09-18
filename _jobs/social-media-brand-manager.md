@@ -7,8 +7,8 @@ published: true
 ---
 
 Everybody at Once is seeking a Social Media Brand Manager to run some of the best media and
-entertainment brands in the industry. The ideal candidate is an enthusiastic and well­organized go­getter
-with 2­3 years experience in social media management for a brand that has both strong original editorial
+entertainment brands in the industry. The ideal candidate is an enthusiastic and well organized go getter
+with 2 - 3 years experience in social media management for a brand that has both strong original editorial
 content and measurable organic volume. They will have an understanding of industry best practices and the
 drive to innovate and invent some of their own.
 
@@ -20,7 +20,7 @@ an audience and our understanding that the most effective campaigns capture and 
 towards brand goals while enabling fans to become better fans.
 
 If you meet the requirements, please send us a note on why you think you’d make a great fit at EA1, links to
-examples of your past experience in social, and a resume to [jobs@ea1.co​](mailto:jobs@ea1.co).
+examples of your past experience in social, and a resume to [jobs@ea1.co](mailto:jobs@ea1.co).
 
 *****
 
