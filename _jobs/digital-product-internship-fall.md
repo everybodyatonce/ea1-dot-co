@@ -2,7 +2,7 @@
 layout: job
 title: "Digital Production Internship, Fall 2015"
 description: "We are seeking curious, hard working, excited, and efficient interns to join our team in New York ASAP"
-published: false
+published: true
 ---
 
 Everybody at Once (EA1) is a small, growing, fun, bootstrapped company founded in 2013, renowned for strategic audience development and social media strategy with the most interesting brands in media and entertainment. We manage and support a wide range of fandom initiatives. We are currently a team of 9 full-time staff (plus a handful of collaborators) based in the Lower East Side. We are all passionate about fan communities, animated gifs, and poptarts.
