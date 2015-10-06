@@ -38,6 +38,7 @@ Candidates must be available for 10-20 hours, M-F, between the hours of 10:00am-
 To be considered for this position, please send the following to [intern@ea1.co](mailto:intern@ea1.co) with “Fall Internship 2015” in the Subject Line.
 
 Please include:
+
 - A cover letter outlining why you are a great fit for this position. Please include relevant experience and skillsets, as well as what your favorite t.v. show is and why. 
 - Any/all social handles.
 
