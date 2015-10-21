@@ -38,7 +38,7 @@ If you would like to create a new team member, talk or job BUT not
 publish it to the site, add `published: false` to the above code
 before the last set of three dashes.
 
-__NOTE: "Collaborators" have a 'title' field and "Team Members" do not. To move someone between the two sections, add or remove the title field. Apologies that is confusing!__ - Brennan
+__NOTE: "Team Members" have a 'title' field and "Collaborators" do not. To move someone between the two sections, add or remove the title field. Apologies that is confusing!__ - Brennan
 
 ### Adding images
 
