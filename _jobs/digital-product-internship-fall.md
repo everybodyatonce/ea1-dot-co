@@ -1,6 +1,6 @@
 ---
 layout: job
-title: "Digital Production Internship, Fall 2015"
+title: "Digital Production Internship, Spring and/or Summer 2016"
 description: "We are seeking curious, hard working, excited, and efficient interns to join our team in New York ASAP"
 published: true
 ---
@@ -35,7 +35,7 @@ The best candidate will be:
 
 Candidates must be available for 10-20 hours, M-F, between the hours of 10:00am-6:00pm.
 
-To be considered for this position, please send the following to [intern@ea1.co](mailto:intern@ea1.co) with “Fall Internship 2015” in the Subject Line.
+To be considered for this position, please send the following to [intern@ea1.co](mailto:intern@ea1.co) with “Spring and/or Summer 2016 Internship” in the Subject Line.
 
 Please include:
 
