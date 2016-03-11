@@ -15,7 +15,7 @@ Take a look at the full text of the Audience Strategist job description below. I
 
 ## Role & Responsibilities
 
-The Social Media Audience Strategist is responsible for developing and executing social media campaigns , audience development, and content creation. They will oversee and/or implement the execution of social media strategies that build both brand awareness and audience affinity on major and emerging social media platforms. Collaborating with a staff of social media and audience development experts, they will be responsible for:
+The Social Media Audience Strategist is responsible for developing and executing social media campaigns, audience development, and content creation. They will oversee and/or implement the execution of social media strategies that build both brand awareness and audience affinity on major and emerging social media platforms. Collaborating with a staff of social media and audience development experts, they will be responsible for:
 
 - Strategic development and execution for campaigns and brands
 - Execution of creative audience development for campaigns and brands
