@@ -35,7 +35,7 @@ The Social Media Audience Strategist is responsible for the development and exec
 The Audience Strategist is responsible for creating and/or overseeing the content, campaigns, social messaging, and customer service for owned social media handles. The Audience Strategist is responsible for aligning their work  with a brand’s overall marketing strategy as determined by EA1 in conjunction with the client. This content should reflect the Social Media Audience Strategist’s understanding of programming, audience sentiment, and brand goals. 
 
 Some examples of Content Creation and Campaign Execution are:
-- Creation of gifs, stills, or other assets from show content that highlight major elements or big moments.
+* Creation of gifs, stills, or other assets from show content that highlight major elements or big moments.
 - Participation Campaigns with fans (i.e. Contests, giveaways, fan art prompts)
 - Engaging with talent and crew on social. 
 - Live Tweeting/Tumblring and engagement during broadcast.
