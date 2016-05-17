@@ -1,6 +1,6 @@
 ---
 layout: job
-title: "Digital Production Internship, Spring and/or Summer 2016"
+title: "Digital Production Internship, Fall 2016"
 description: "We are seeking curious, hard working, excited, and efficient interns to join our team in New York ASAP"
 published: true
 ---
