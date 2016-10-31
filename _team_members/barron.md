@@ -1,7 +1,7 @@
 ---
 layout: default
 name: "Kristi Barron"
-image: "https://cloud.githubusercontent.com/assets/192584/6907497/a067c70a-d704-11e4-84f4-4867e33eb530.gif"
+image: "https://cloud.githubusercontent.com/assets/11576676/19869549/2942b66e-9f83-11e6-9872-d2b083cb197e.gif"
 title: "Project Manager"
 description: "Organizes all the things"
 ---
